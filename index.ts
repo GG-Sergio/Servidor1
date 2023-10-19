@@ -1,7 +1,5 @@
 const express = require("express")
-//transpilar 
-//EcmaScript ES modules | import express from "express"
-//CommonJS const express = require("express")
+import router from './src/routes';
 
 const app = express();
 const example = function(){
@@ -12,3 +10,7 @@ app.listen(
     9000,
     example
 )
+
+router(app);
+
+app.listen(port, initialize);
